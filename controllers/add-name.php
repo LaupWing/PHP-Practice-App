@@ -1,3 +1,5 @@
 <?php
 
-var_dump($_GET['name']);
+$app['database']->insert('users', [
+   'name' => $_POST['name']
+]);
