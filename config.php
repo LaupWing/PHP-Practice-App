@@ -9,4 +9,4 @@ return [
 		'connection' => 'mysql:localhost=3306',
 		'options' => []
 	]
-]
+];
