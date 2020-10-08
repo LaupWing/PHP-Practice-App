@@ -6,4 +6,4 @@ $router = new Router;
 
 require 'routes.php';
 
-require $router->direct('about/culture');
+require $router->direct(trim($_SERVER['REQUEST_URI'], '/'));
