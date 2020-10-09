@@ -10,6 +10,7 @@ class PagesController
    }
    public function about()
    {
+      die(var_dump(view('about')));
       require view('about');
    }
    public function contact()
