@@ -4,13 +4,10 @@ class PagesController
 {
    public function home()
    {
-      $users = App::get('database')->selectAll('users');
-
-      require view('index', compact('users'));
+      require view('index');
    }
    public function about()
    {
-      die(var_dump(view('about')));
       require view('about');
    }
    public function contact()

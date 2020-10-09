@@ -41,6 +41,7 @@ class Router
    protected function callAction($controller, $action)
    {
       $controller = new $controller;
+
       if (!method_exists($controller, $action)) {
          throw new Exception(
             "${controller} doest not not respond to ${action}"
