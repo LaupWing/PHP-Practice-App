@@ -4,10 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit88112f25b570531569f15c514d54bb00
+class ComposerStaticInitdd1f61dd2d2f08eb5858e3c17a51b988
 {
     public static $classMap = array (
+        'App' => __DIR__ . '/../..' . '/core/App.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
+        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
@@ -16,7 +18,7 @@ class ComposerStaticInit88112f25b570531569f15c514d54bb00
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit88112f25b570531569f15c514d54bb00::$classMap;
+            $loader->classMap = ComposerStaticInitdd1f61dd2d2f08eb5858e3c17a51b988::$classMap;
 
         }, null, ClassLoader::class);
     }
